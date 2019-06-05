@@ -10,7 +10,8 @@ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o webhook-push-server main.go
 ```
 ## 运行方式
 ```
-./main -log_dir=./日志目录
+nohup ./webhook-push-server -log_dir=./日志目录 &
+
 ```
 
 ## 仓库 Webhooks 调用
